@@ -1,0 +1,298 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* PALETA */
+:root {
+  --amarelo: #F4B400;
+  --amarelo-escuro: #C49000;
+  --bege-claro: #0f0f0f;
+  --bege-escuro: #000000;
+}
+
+/* BODY */
+body {
+  font-family: Arial, sans-serif;
+  background: var(--bege-claro);
+  color: #ffffff;
+}
+
+
+
+.hero {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  height: 90vh;
+  max-width: 1100px;
+  margin: 40px auto;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+/* IMAGEM */
+.hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(40%) contrast(1.1);
+}
+
+/* TEXTO */
+.hero-text {
+  background: linear-gradient(to bottom, #000000, #000000);
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding: 60px;
+}
+
+/* FOTO REDONDA */
+.foto-hero {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  margin-bottom: 20px;
+
+  border: 3px solid white;
+}
+
+/* TITULO */
+.hero-text h1 {
+  font-size: 80px;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+
+/* SUB */
+.hero-text h2 {
+  font-size: 26px;
+  margin: 10px 0;
+}
+
+/* TEXTO */
+.hero-text p {
+  font-size: 15px;
+  margin: 20px 0;
+  color: #fff3c4;
+}
+
+/* BOTÃO */
+.hero-text button {
+  width: 150px;
+  padding: 12px;
+  background: white;
+  color: var(--amarelo-escuro);
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.hero-text button:hover {
+  background: #fffeac;
+}
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* badge */
+.skill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  background: rgba(255,255,255,0.1);
+  padding: 10px 18px;
+  border-radius: 25px;
+
+  color: white;
+  font-size: 14px;
+
+  transition: 0.3s;
+}
+
+/* ícone */
+.skill img {
+  width: 18px;
+  height: 18px;
+}
+
+/* hover bonito */
+.skill:hover {
+  background: #ffec41;
+  color: black;
+}
+
+
+.servicos {
+  background: #0f0f0f;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* subtítulo */
+.servicos .subtitulo {
+  color: #ffde4d;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* título */
+.servicos h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+/* container dos cards */
+.cards-servicos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* card */
+.card-servico {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 15px;
+  padding: 25px;
+  width: 260px;
+  text-align: left;
+  transition: 0.3s;
+}
+
+.card-servico:hover {
+  transform: translateY(-8px);
+  border-color: #000000;
+}
+
+/* título do card */
+.card-servico h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* texto */
+.card-servico p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.servicos li {
+  margin: 8px 0;
+}
+
+/* PROJETOS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+ background: rgb(20, 20, 20);
+border-radius: 15px;
+overflow: hidden;
+border: 1px solid var(--bege-escuro);
+box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+  height: 125px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 15px 0 5px;
+}
+
+.card p {
+  font-size: 14px;
+  padding: 0 10px;
+  color: #ffffff;
+}
+.contato {
+  background: #0f0f0f;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.contato .subtitulo {
+  color: #F4B400;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.contato h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.contato .desc {
+  color: #ccc;
+  margin-bottom: 40px;
+}
+
+
+.cards-contato {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* card */
+.card-contato {
+  text-decoration: none;
+  color: white;
+
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 15px 30px;
+  border-radius: 10px;
+
+  transition: 0.3s;
+}
+
+/* hover INSANO */
+.card-contato:hover {
+  background: #eec144;
+  color: black;
+  transform: translateY(-5px);
+}
+
+.links a:hover {
+  background: var(--amarelo);
+}
